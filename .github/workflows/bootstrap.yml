@@ -17,7 +17,7 @@ jobs:
         run: |
           cat .bootstrap-payload-1.txt .bootstrap-payload-2.txt | base64 --decode > site.tar.gz
           tar -xzf site.tar.gz
-          rm -f site.tar.gz .bootstrap-payload-1.txt .bootstrap-payload-2.txt .github/workflows/bootstrap.yml
+          rm -f site.tar.gz .bootstrap-payload-1.txt .bootstrap-payload-2.txt .github/workflows/bootstrap.yml .github/workflows/pages.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
